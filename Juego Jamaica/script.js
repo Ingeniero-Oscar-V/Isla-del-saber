@@ -1,5 +1,4 @@
 const DEFAULT_QUESTIONS = [
-    /* Cultura */
     { cat: "Información general", q: "¿Cuál es la capital de Jamaica?", a: "kingston" },
     { cat: "Información general", q: "¿Cuál es el idioma oficial de Jamaica?", a: "inglés" },
     { cat: "Información general", q: "¿En qué mar está ubicada Jamaica?", a: "caribe" },
@@ -34,6 +33,7 @@ const CATEGORIES = [
     { name: "Festival", color: "#fce4ec", border: "#f48fb1", text: "#7a1a3a", icon: "🎉" },
     { name: "Comida y lugar famoso", color: "#fff8e1", border: "#ffe082", text: "#7a5c00", icon: "🍽️" },
     { name: "Dato curioso", color: "#ede7f6", border: "#b39ddb", text: "#4a2a7a", icon: "🌟" },
+    { name: "Otro", color: "#ede7f6", border: "#EDEBD3", text: "#EDEBD3", icon: "📂" },
 ];
 
 /* ──────────────────────────────────────────
