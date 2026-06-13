@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Isla del Saber</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div id="app">
+
+    <button id="gear-btn" aria-label="Configuración">&#9881;</button>
+
+    <div id="header">
+      <h1>🌴 Isla del Saber</h1>
+      <p>Gira el carrusel y responde sobre Jamaica</p>
+    </div>
+
+    <div id="score-area">
+      <div class="score-pill">Correctas: <span id="score-correct">0</span></div>
+      <div class="score-pill">Jugadas: <span id="score-total">0</span></div>
+    </div>
+
+    <div id="carousel-wrapper">
+      <div id="carousel-track"></div>
+    </div>
+
+    <button id="spin-btn">GIRAR</button>
+
+  </div>
+
+
+  <!-- Modal de pregunta -->
+  <div class="overlay" id="question-overlay">
+    <div class="modal">
+      <button class="modal-close" id="q-close" aria-label="Cerrar">&#10005;</button>
+      <div class="cat-badge" id="modal-cat-badge"></div>
+      <h2 id="modal-question"></h2>
+      <input type="text" id="answer-input" placeholder="Escribe tu respuesta..." />
+      <button class="btn-primary" id="check-btn">Verificar respuesta</button>
+      <div id="answer-result"></div>
+    </div>
+  </div>
+
+
+  <!-- Modal de configuración -->
+  <div class="overlay" id="config-overlay">
+    <div class="modal">
+      <button class="modal-close" id="cfg-close" aria-label="Cerrar">&#10005;</button>
+      <div class="cat-badge">&#9881; Administración</div>
+      <h2>Agregar nueva pregunta</h2>
+
+      <div class="config-field">
+        <label for="cfg-cat">Categoría</label>
+        <select id="cfg-cat"></select>
+      </div>
+
+      <div class="config-field">
+        <label for="cfg-q">Pregunta</label>
+        <textarea id="cfg-q" rows="3" placeholder="Escribe la pregunta..."></textarea>
+      </div>
+
+      <div class="config-field">
+        <label for="cfg-a">Respuesta correcta</label>
+        <input type="text" id="cfg-a" placeholder="Respuesta..." />
+      </div>
+
+      <button class="btn-primary" id="cfg-save">Agregar pregunta</button>
+      <div id="config-msg">&#10003; Pregunta agregada correctamente.</div>
+    </div>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
