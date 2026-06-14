@@ -33,7 +33,7 @@ const CATEGORIES = [
     { name: "Festival", color: "#fce4ec", border: "#f48fb1", text: "#7a1a3a", icon: "🎉" },
     { name: "Comida y lugar famoso", color: "#fff8e1", border: "#ffe082", text: "#7a5c00", icon: "🍽️" },
     { name: "Dato curioso", color: "#ede7f6", border: "#b39ddb", text: "#4a2a7a", icon: "🌟" },
-    { name: "Otro", color: "#ede7f6", border: "#EDEBD3", text: "#EDEBD3", icon: "📂" },
+    { name: "Otras", color: "#f0f0f0", border: "#1a1a1a", text: "#1a1a1a", icon: "❓" }
 ];
 
 /* ──────────────────────────────────────────
@@ -127,34 +127,34 @@ function isCorrect(userAns, correctAns) {
  * centradas en `currentCatIndex`.
  */
 function renderCarousel() {
-    track.innerHTML = '';
-
-    const offsets = [-2, -1, 0, 1, 2];
-
-    offsets.forEach(offset => {
-        const idx = ((currentCatIndex + offset) % N + N) % N;
-        const cat = CATEGORIES[idx];
-
-        const card = document.createElement('div');
-
-        if (offset === 0) {
-            card.className = 'card center';
-        } else if (Math.abs(offset) === 1) {
-            card.className = 'card side-near';
-        } else {
-            card.className = 'card side-far';
-        }
-
-        card.style.background = cat.color;
-        card.style.borderColor = cat.border;
-
-        card.innerHTML = `
+  track.innerHTML = '';
+ 
+  const offsets = [-2, -1, 0, 1, 2];
+ 
+  offsets.forEach(offset => {
+    const idx = ((currentCatIndex + offset) % N + N) % N;
+    const cat = CATEGORIES[idx];
+ 
+    const card = document.createElement('div');
+ 
+    if (offset === 0) {
+      card.className = 'card center';
+    } else if (Math.abs(offset) === 1) {
+      card.className = 'card side-near';
+    } else {
+      card.className = 'card side-far';
+    }
+ 
+    card.style.background  = cat.color;
+    card.style.borderColor = cat.border;
+ 
+    card.innerHTML = `
       <div class="card-icon">${cat.icon}</div>
       <div class="card-label" style="color:${cat.text}">${cat.name}</div>
     `;
-
-        track.appendChild(card);
-    });
+ 
+    track.appendChild(card);
+  });
 }
 
 /**
