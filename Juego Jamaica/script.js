@@ -20,6 +20,8 @@ const DEFAULT_QUESTIONS = [
     { cat: "Dato curioso", q: "¿En qué barrios de Kingston surgieron los Sound Systems?", a: "barrios pobres" },
     { cat: "Dato curioso", q: "¿Qué género musical de EE.UU. fue inspirado por los Sound Systems jamaicanos?", a: "hip-hop" },
     { cat: "Dato curioso", q: "Los DJs jamaicanos usaban camiones con generadores, ¿para qué? (acertijo)", a: "fiestas callejeras" },
+    { cat: "Reto cultural", q: "💃 RETO: Simula un pequeño baile inspirado en un festival jamaicano, como si estuvieras en las calles de Kingston con música reggae o dancehall. ¡Tienes 10 segundos!", a: "reto cumplido" },
+    { cat: "Reto rápido", q: "🇯🇲 RETO: Di en voz alta 3 cosas que recuerdes de Jamaica (pueden ser comida, música, lugares o costumbres). ¡Solo tienes 10 segundos!", a: "reto cumplido" }
 ];
 
 
@@ -33,6 +35,7 @@ const CATEGORIES = [
     { name: "Festival", color: "#fce4ec", border: "#f48fb1", text: "#7a1a3a", icon: "🎉" },
     { name: "Comida y lugar famoso", color: "#fff8e1", border: "#ffe082", text: "#7a5c00", icon: "🍽️" },
     { name: "Dato curioso", color: "#ede7f6", border: "#b39ddb", text: "#4a2a7a", icon: "🌟" },
+    { name: "Retos rapidos", color: "#fff0f0", border: "#cc2200", text: "#8a0000", icon: "⚔️" },
     { name: "Otras", color: "#f0f0f0", border: "#1a1a1a", text: "#1a1a1a", icon: "❓" }
 ];
 
