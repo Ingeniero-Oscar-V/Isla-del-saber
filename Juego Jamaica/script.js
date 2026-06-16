@@ -1,27 +1,49 @@
 const DEFAULT_QUESTIONS = [
-    { cat: "Información general", q: "¿Cuál es la capital de Jamaica?", a: "kingston" },
-    { cat: "Información general", q: "¿Cuál es el idioma oficial de Jamaica?", a: "inglés" },
-    { cat: "Información general", q: "¿En qué mar está ubicada Jamaica?", a: "caribe" },
-    { cat: "Información general", q: "¿Qué tipo de clima tiene Jamaica?", a: "tropical" },
-    { cat: "Información general", q: "¿Bob Marley popularizó el reggae, el jazz o el blues? (trampa)", a: "reggae" },
-    { cat: "Tradición", q: "¿Cómo se llama el pollo típico jamaicano con especias picantes?", a: "jerk chicken" },
-    { cat: "Tradición", q: "¿Qué tres cosas son fundamentales en la vida diaria jamaicana?", a: "música, baile y familia" },
-    { cat: "Tradición", q: "El Jerk Chicken, ¿es dulce o picante? (trampa: suena sofisticado)", a: "picante" },
-    { cat: "Tradición", q: "¿Las reuniones familiares en Jamaica son parte de la tradición? Sí o No", a: "sí" },
-    { cat: "Festival", q: "¿En qué ciudad se celebra el carnaval de Jamaica?", a: "kingston" },
-    { cat: "Festival", q: "¿Entre qué meses se celebra el carnaval jamaicano?", a: "marzo y abril" },
-    { cat: "Festival", q: "¿Qué género musical NO suena en el carnaval: Soca, Dancehall, Reggae o Salsa? (trampa)", a: "salsa" },
-    { cat: "Festival", q: "¿De qué se llenan las calles durante el carnaval de Jamaica?", a: "disfraces y música" },
-    { cat: "Comida y lugar famoso", q: "¿Cuál es la comida típica más popular de Jamaica?", a: "jerk chicken" },
-    { cat: "Comida y lugar famoso", q: "¿Cómo se llama la famosa cascada turística de Jamaica?", a: "dunn's river falls" },
-    { cat: "Comida y lugar famoso", q: "En Dunn's River Falls, ¿los visitantes pueden subir o solo mirar? (acertijo)", a: "subir" },
-    { cat: "Comida y lugar famoso", q: "¿El Jerk Chicken es una bebida, una sopa o una carne? (trampa)", a: "carne" },
-    { cat: "Dato curioso", q: "¿En qué década nacieron los Sound Systems en Jamaica?", a: "los 50" },
-    { cat: "Dato curioso", q: "¿En qué barrios de Kingston surgieron los Sound Systems?", a: "barrios pobres" },
-    { cat: "Dato curioso", q: "¿Qué género musical de EE.UU. fue inspirado por los Sound Systems jamaicanos?", a: "hip-hop" },
-    { cat: "Dato curioso", q: "Los DJs jamaicanos usaban camiones con generadores, ¿para qué? (acertijo)", a: "fiestas callejeras" },
-    { cat: "Reto cultural", q: "💃 RETO: Simula un pequeño baile inspirado en un festival jamaicano, como si estuvieras en las calles de Kingston con música reggae o dancehall. ¡Tienes 10 segundos!", a: "reto cumplido" },
-    { cat: "Reto rápido", q: "🇯🇲 RETO: Di en voz alta 3 cosas que recuerdes de Jamaica (pueden ser comida, música, lugares o costumbres). ¡Solo tienes 10 segundos!", a: "reto cumplido" }
+    { cat: "General Information", q: "What is the capital of Jamaica?", a: "kingston" },
+    
+    { cat: "General Information", q: "What is the official language of Jamaica?", a: "English" },
+    
+    { cat: "General Information", q: "In which sea is Jamaica located?", a: "Caribbean" },
+    
+    { cat: "General Information", q: "What type of climate does Jamaica have?", a: "tropical" },
+    
+    { cat: "General Information", q: "Did Bob Marley popularize reggae, jazz, or blues? (trick question)", a: "reggae" },
+    
+    { cat: "Tradition", q: "What is the name of the typical Jamaican chicken with hot spices?", a: "jerk chicken" },
+    
+    { cat: "Tradition", q: "What three things are fundamental in daily Jamaican life?", a: "music, dance, and family" },
+    
+    { cat: "Tradition", q: "Is Jerk Chicken sweet or spicy? (trap: sounds sophisticated)", a: "spicy" },
+    
+    { cat: "Tradition", q: "Are family gatherings in Jamaica part of the tradition? Yes or No", a: "yes" },
+    
+    { cat: "Festival", q: "In which city is Jamaican Carnival celebrated?", a: "kingston" },
+    
+    { cat: "Festival", q: "Between which months is Jamaican Carnival celebrated?", a: "March and April" },
+    
+    { cat: "Festival", q: "Which musical genre is NOT played at Carnival: Soca, Dancehall, Reggae, or Salsa? (trap)", a: "salsa" },
+    
+    { cat: "Festival", q: "What fills the streets during Jamaican Carnival?", a: "costumes and music" },
+    
+    { cat: "Food and famous place", q: "What is the most popular traditional food in Jamaica?", a: "jerk chicken" },
+    
+    { cat: "Food and famous place", q: "What is the name of the famous tourist waterfall in Jamaica?", a: "Dunn's River Falls" },
+    
+    { cat: "Food and famous place", q: "At Dunn's River Falls, can visitors climb or just look? (riddle)", a: "climb" },
+    
+    { cat: "Food and famous place", q: "Is Jerk Chicken a drink, a soup, or a meat? (trick)", a: "meat" },
+    
+    { cat: "Fun fact", q: "In what decade did Sound Systems originate in Jamaica?", a: "the 1950s" },
+    
+    { cat: "Fun fact", q: "In which neighborhoods of Kingston did Sound Systems emerge?", a: "slums" },
+    
+    { cat: "Fun fact", q: "Which US musical genre was inspired by Jamaican Sound Systems?", a: "hip-hop" },
+    
+    { cat: "Fun Fact", q: "Jamaican DJs used trucks with generators, what for? (riddle)", a: "street parties" },
+    
+    { cat: "Cultural Challenge", q: "Simulate a short dance inspired by a Jamaican festival, as if you were in the streets of Kingston with reggae or dancehall music. You have 10 seconds!", a: "challenge completed" },
+    
+    { cat: "Quick Challenge", q: "Say out loud 3 things you remember about Jamaica (they can be food, music, places or customs). You only have 10 seconds!", a: "challenge completed" }
 ];
 
 
@@ -30,13 +52,13 @@ const DEFAULT_QUESTIONS = [
    ────────────────────────────────────────── */
 
 const CATEGORIES = [
-    { name: "Información general", color: "#e3f2fd", border: "#90caf9", text: "#1a4a7a", icon: "🌍" },
-    { name: "Tradición", color: "#e8f5e9", border: "#a5d6a7", text: "#2e6b3e", icon: "🥁" },
+    { name: "General Information", color: "#e3f2fd", border: "#90caf9", text: "#1a4a7a", icon: "🌍" },
+    { name: "Tradition", color: "#e8f5e9", border: "#a5d6a7", text: "#2e6b3e", icon: "🥁" },
     { name: "Festival", color: "#fce4ec", border: "#f48fb1", text: "#7a1a3a", icon: "🎉" },
-    { name: "Comida y lugar famoso", color: "#fff8e1", border: "#ffe082", text: "#7a5c00", icon: "🍽️" },
-    { name: "Dato curioso", color: "#ede7f6", border: "#b39ddb", text: "#4a2a7a", icon: "🌟" },
-    { name: "Retos rapidos", color: "#fff0f0", border: "#cc2200", text: "#8a0000", icon: "⚔️" },
-    { name: "Otras", color: "#f0f0f0", border: "#1a1a1a", text: "#1a1a1a", icon: "❓" }
+    { name: "Famous food and place", color: "#fff8e1", border: "#ffe082", text: "#7a5c00", icon: "🍽️" },
+    { name: "Interesting fact", color: "#ede7f6", border: "#b39ddb", text: "#4a2a7a", icon: "🌟" },
+    { name: "Quick challenges", color: "#fff0f0", border: "#cc2200", text: "#8a0000", icon: "⚔️" },
+    { name: "Other", color: "#f0f0f0", border: "#1a1a1a", text: "#1a1a1a", icon: "❓" }
 ];
 
 /* ──────────────────────────────────────────
